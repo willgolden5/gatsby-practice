@@ -7,12 +7,13 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: "k6ivABQyfmR5te6P8QMGuLDOULXqxqknLgaDIyGPbnE",
-        spaceId: "",
+        spaceId: "gqfzf5om5m4h",
       },
     },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-postcss`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {

@@ -1,3 +1,4 @@
+// src/utils/auth.js
 import auth0 from "auth0-js"
 import { navigate } from "gatsby"
 
@@ -13,13 +14,6 @@ const auth = isBrowser
     })
   : {}
 
-
-  // src/utils/auth.js
-// above unchanged
-
-// ...
-
-// insert after auth const
 const tokens = {
   accessToken: false,
   idToken: false,
@@ -63,14 +57,24 @@ const setSession = (cb = () => {}) => (err, authResult) => {
   }
 }
 
+export const silentAuth = callback => {
+  if (!isAuthenticated()) return callback()
+  auth.checkSession({}, setSession(callback))
+}
+
 export const handleAuthentication = () => {
   if (!isBrowser) {
     return;
   }
-
+  
   auth.parseHash(setSession())
 }
 
 export const getProfile = () => {
   return user
+}
+
+export const logout = () => {
+  localStorage.setItem("isLoggedIn", false)
+  auth.logout()
 }

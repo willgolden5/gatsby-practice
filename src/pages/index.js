@@ -3,6 +3,7 @@ import Footer from "../utils/footer"
 import { DropDownMenu } from '../utils/navigation/dropDownMenu';
 import { Navbar } from '../utils/navigation/navbar'
 import { NavItem } from '../utils/navigation/navItem'
+import { NYCHero } from '../utils/PageComponents/NycHero'
 
 
 const IndexPage = () => {
@@ -13,17 +14,11 @@ const IndexPage = () => {
           <DropDownMenu></DropDownMenu>
         </NavItem>
         <NavItem icon="😁" />
-        <NavItem icon="temp" >
+        <NavItem icon="😁" >
           <p>Hello World</p>
         </NavItem>
       </Navbar>
-      <body className='hero'>
-        <h1>TITLE</h1>
-        <p>Laboris magna velit ut est veniam nostrud deserunt. 
-          Ex fugiat cillum quis nulla sit irure ipsum Lorem mollit officia laborum. 
-          Cillum ut do aliquip irure irure dolore nostrud fugiat elit adipisicing enim magna. 
-          Duis dolore mollit adipisicing anim occaecat cillum aute ea commodo exercitation sunt exercitation.</p>
-      </body>
+      <NYCHero />
       <Footer className='footer-silhouette'/>
     </div>
   )

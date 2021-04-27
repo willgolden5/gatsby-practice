@@ -36,6 +36,21 @@ const Account = () => {
           Log Out
         </a>
       </nav>
+      <div id="Clouds">
+              <div class="Cloud Foreground"></div>
+              <div class="Cloud Background"></div>
+              <div class="Cloud Foreground"></div>
+              <div class="Cloud Background"></div>
+              <div class="Cloud Foreground"></div>
+              <div class="Cloud Background"></div>
+              <div class="Cloud Background"></div>
+              <div class="Cloud Foreground"></div>
+              <div class="Cloud Background"></div>
+              <div class="Cloud Background"></div>
+              {/* <svg viewBox="0 0 40 24" class="Cloud">
+                <use xlink:href="#Cloud"></use>
+              </svg> */}
+        </div>
       <NycSilhouette />
       <Router>
         <Home path="/account/" user={user} />

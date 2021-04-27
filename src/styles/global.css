@@ -37,6 +37,20 @@ html {
     height: 80%;
   }
 
+  .nyc-hero {
+    margin-top: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nyc-hero-image {
+    display: flex;
+    top: 50px;
+    color: black;
+    justify-content: center;
+  }
+
   .main {
     display: flex;
     flex-direction:column;
@@ -111,3 +125,6 @@ html {
   .menu-item:hover {
     background-color: darkgray;
   }
+
+
+  

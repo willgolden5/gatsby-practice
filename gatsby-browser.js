@@ -1,4 +1,5 @@
 import './src/styles/global.css';
+import React from 'react';
 
 import { silentAuth } from "./src/utils/auth"
 

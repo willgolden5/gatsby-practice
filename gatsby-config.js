@@ -4,6 +4,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: "k6ivABQyfmR5te6P8QMGuLDOULXqxqknLgaDIyGPbnE",

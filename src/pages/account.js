@@ -3,6 +3,8 @@ import React from "react"
 import { Router } from "@reach/router"
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
+import NycSilhouette from "../assets/nycsvg.svg"
+
 
 const Home = ({ user }) => {
   return <p>Hi, {user.name ? user.name : "friend"}!</p>
@@ -34,6 +36,7 @@ const Account = () => {
           Log Out
         </a>
       </nav>
+      <NycSilhouette />
       <Router>
         <Home path="/account/" user={user} />
         <Settings path="/account/settings" />
